@@ -1,23 +1,54 @@
 # OpenBattle
 
-Open-source vertical social survival shooter set inside a 10-floor tower.
+OpenBattle is an open-source **vertical social survival shooter** set inside a 10-floor tower.
 
-Desktop-first: Windows, macOS Apple Silicon, Linux. Linux Dedicated Server is the authoritative server target.
+> 40 players. 10 floors. Trust is gameplay.
 
-## Core v0.1
+## Status
 
-- 40 slots: Floors 1-9 have 4 players each, Floor 10 has 4 Security defenders.
-- Solo and Team Work modes.
-- In-world alliances with armband identity and radio.
-- Betrayal remains possible.
-- Dead players drop unique ID Cards redeemable at Security Exchange Boxes.
-- Same-origin-floor IDs have very high bounty value.
-- Equipment generally gets stronger on higher floors.
-- Lower-floor underdog wins score much higher.
-- Gameplay-critical state is server authoritative.
+Pre-alpha. The repository now contains the first **MVP / M1 vertical-slice gameplay foundation**.
 
-## Tech
+## Desktop-first targets
 
-Unreal Engine 5 + C++ + Linux Dedicated Server.
+- Windows x64
+- macOS Apple Silicon
+- Linux x86_64
+- Linux Dedicated Server
 
-See docs/GAME_DESIGN.md, docs/ARCHITECTURE.md and docs/ROADMAP.md.
+## M1 prototype
+
+The current prototype intentionally compresses the full game into **3 floors / 12 players**:
+
+- Floor 1: 4 Rebels
+- Floor 2: 4 Rebels
+- Floor 3: 4 Security
+- first-person movement
+- server-authoritative hitscan shooting
+- replicated health / death
+- unique ID Card drops and pickup
+- Security Exchange Box redemption
+- alliance request / accept
+- friendly-fire betrayal remains possible
+- floor-pressure states and damage
+- procedural graybox tower generated from engine primitives
+
+### Controls
+
+- W/A/S/D — move
+- Mouse — look
+- Space — jump
+- Left Mouse — fire
+- E — interact / redeem IDs
+- G — request alliance
+- H — accept alliance
+
+## Full-game target
+
+The production target remains 40 players across 10 floors with four Security defenders on Floor 10.
+
+## Docs
+
+- `docs/GAME_DESIGN.md`
+- `docs/ARCHITECTURE.md`
+- `docs/ROADMAP.md`
+- `docs/MVP.md`
