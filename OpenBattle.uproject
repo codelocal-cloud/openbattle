@@ -1,0 +1,9 @@
+{
+  "FileVersion": 3,
+  "Category": "Games",
+  "Description": "OpenBattle - open-source vertical social survival shooter.",
+  "Modules": [
+    { "Name": "OpenBattle", "Type": "Runtime", "LoadingPhase": "Default" }
+  ],
+  "TargetPlatforms": ["Windows", "Mac", "Linux"]
+}
