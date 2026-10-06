@@ -38,4 +38,10 @@
 - Thay các nhân vật khối thô bằng silhouette/proxy người có tỷ lệ tự nhiên hơn.
 
 ## Ghi chú handoff
-Scene hiện tại được giữ làm mốc để team có thể pull về và tiếp tục từ đúng trạng thái hôm nay. Không dùng file `openbattle_tower.blend1` làm file chính; đó chỉ là backup tự động của Blender.
+Scene hiện tại được giữ làm mốc để team có thể pull về và tiếp tục từ đúng trạng thái hôm nay. Bản tham chiếu đã được commit/push lên `origin/main` tại commit `2017520`.
+
+Trên máy khác: pull repo OpenBattle, sau đó mở `Generated/Blender/openbattle_tower.blend` bằng Blender cùng phiên bản hoặc mới hơn. Scene hiện tại chủ yếu dùng mesh/material nội bộ nên có thể tiếp tục trực tiếp từ file này.
+
+Lưu ý: external assets chưa được pack vào `.blend`. Nếu sau này thêm texture/HDRI/file ngoài, cần dùng **File → External Data → Pack Resources** trước khi push để tránh thiếu asset khi chuyển máy.
+
+Không dùng file `openbattle_tower.blend1` làm file chính; đó chỉ là backup tự động của Blender.
